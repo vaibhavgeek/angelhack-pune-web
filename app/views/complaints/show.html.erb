@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Complaint text:</strong>
+  <%= @complaint.complaint_text %>
+</p>
+
+<p>
+  <strong>Religion:</strong>
+  <%= @complaint.religion %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @complaint.gender %>
+</p>
+
+<p>
+  <strong>Caste:</strong>
+  <%= @complaint.caste %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @complaint.location %>
+</p>
+
+<p>
+  <strong>Complaint pic:</strong>
+  <%= @complaint.complaint_pic %>
+</p>
+
+<p>
+  <strong>Labels:</strong>
+  <%= @complaint.labels %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @complaint.status %>
+</p>
+
+<p>
+  <strong>Assigned officer:</strong>
+  <%= @complaint.assigned_officer %>
+</p>
+
+<p>
+  <strong>Nature:</strong>
+  <%= @complaint.nature %>
+</p>
+
+<%= link_to 'Edit', edit_complaint_path(@complaint) %> |
+<%= link_to 'Back', complaints_path %>

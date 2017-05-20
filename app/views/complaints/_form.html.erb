@@ -1,0 +1,67 @@
+<%= form_for(complaint) do |f| %>
+  <% if complaint.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(complaint.errors.count, "error") %> prohibited this complaint from being saved:</h2>
+
+      <ul>
+      <% complaint.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :complaint_text %>
+    <%= f.text_field :complaint_text %>
+  </div>
+
+  <div class="field">
+    <%= f.label :religion %>
+    <%= f.text_field :religion %>
+  </div>
+
+  <div class="field">
+    <%= f.label :gender %>
+    <%= f.text_field :gender %>
+  </div>
+
+  <div class="field">
+    <%= f.label :caste %>
+    <%= f.text_field :caste %>
+  </div>
+
+  <div class="field">
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+  </div>
+
+  <div class="field">
+    <%= f.label :complaint_pic %>
+    <%= f.text_field :complaint_pic %>
+  </div>
+
+  <div class="field">
+    <%= f.label :labels %>
+    <%= f.text_field :labels %>
+  </div>
+
+  <div class="field">
+    <%= f.label :status %>
+    <%= f.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= f.label :assigned_officer %>
+    <%= f.text_field :assigned_officer %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nature %>
+    <%= f.text_field :nature %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
