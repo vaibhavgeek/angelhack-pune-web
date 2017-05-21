@@ -27,7 +27,9 @@
 
 <p>
   <strong>Complaint pic:</strong>
-  <%= @complaint.complaint_pic %>
+  <% if @complaint.complaint_pic %>
+  <%= image_tag(@complaint.complaint_pic) %>
+  <% end %>
 </p>
 
 <p>
